@@ -12,10 +12,11 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "CREATE TABLE workdata2 (
+$sql = "CREATE TABLE users2 (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    workhours VARCHAR(20),
-    cdate CHAR(30)
+    fname CHAR(30),
+    email CHAR(30),
+    encpassword CHAR(100)
     )";
     
     if ($conn->query($sql) === TRUE) {

@@ -10,7 +10,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO workdata (workhours)
+$sql = "INSERT INTO workdata2 (workhours)
 VALUES ('4')";
 
 if ($conn->query($sql) === TRUE) {
